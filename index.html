@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Travel- Slicing</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container nav-wrapper">
+                <a href="#" class="logo">Tour<span>avel</span></a>
+                <div class="menu-wrapper">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link active">Home</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Services</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">About us</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                    </ul>
+                    <a href="#" class="btn-member">Member area</a>
+                </div>
+                <div class="menu-toggle bx bxs-grid-alt">
+                </div>
+            </div>
+        </nav>
+
+        <section class="home" id="home">
+            <div class="container home-wrapper">
+                <div class="content-left">
+                    <h1 class="heading">Make Your Trip Memorable Book With Tour<span>avel</span></h1>
+                    <p class="subheading">We have partners with several destinations that you
+                        might feel at home there, we will guide you with our best service.</p>
+                    <div class="box-wrapper">
+                        <div class="box">
+                            <i class='bx bxs-check-square'></i>
+                            <p>Plan your trip</p>
+                        </div>
+                        <div class="box">
+                            <i class='bx bxs-check-square'></i>
+                            <p>Fly with us</p>
+                        </div>
+                    </div>
+                    <div class="form-panel">
+                        <img src="assets/img/form.png" alt="">
+                        <div class="title-form">
+                            <p>Get the schedule</p>
+                        </div>
+                        <div class="form-location">
+                            <i class='bx bxs-map loc'></i>
+                            <div class="location">
+                                <p>Location <i class='bx bx-chevron-down'></i></p>
+                                <select>
+                                    <option value="">Jakarta, indonesia</option>
+                                    <option value="">Bali, indonesia</option>
+                                    <option value="">Yogyakarta, indonesia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-date">
+                            <i class='bx bxs-calendar-alt cal'></i>
+                            <div class="date">
+                                <p>Date <i class='bx bx-chevron-down'></i></p>
+                                <input type="date">
+                            </div>
+                        </div>
+                        <div class="btn-search">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                    <p class="sugestion">Popular search : Kuta beach, Raja Ampat Beach, Borobudur temple</p>
+                </div>
+                <div class="content-right">
+                    <div class="img-wrapper">
+                        <img src="assets/img/hero-tavel.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <!-- Service Start -->
+    <section class="service">
+        <div class="container service-wrapper">
+            <div class="row1">
+                <p class="label-service">What we serve</p>
+                <h1 class="heading-service">Top Values For You</h1>
+                <p class="subheading-service">The best service that will be with you every time</p>
+            </div>
+            <div class="row2">
+                <div class="box-service">
+                    <i class='bx bx-globe'></i>
+                    <h3>Lot of Choises</h3>
+                    <p>Total of more than 450 destinations
+                        in various countries in the world
+                        become partners with us</p>
+
+                    <div class="btn-learn">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="box-service">
+                    <i class='bx bxs-notepad'></i>
+                    <h3>Tour Guide</h3>
+                    <p>There are 3 guides for each
+                        destination in the place you visit</p>
+
+                    <div class="btn-learn">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="box-service">
+                    <i class='bx bxs-cart-add'></i>
+                    <h3>Easy Booking</h3>
+                    <p>We provide all services online
+                        which can be accessed easily
+                        through our website</p>
+
+                    <div class="btn-learn">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="box-service">
+                    <i class='bx bxs-hotel'></i>
+                    <h3>Luxury Hotel</h3>
+                    <p>We also provide lodging near the
+                        destination where you are visiting.</p>
+
+                    <div class="btn-learn">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service End -->
+
+    <!-- Produk start -->
+    <section class="produk">
+        <div class="container produk-wrapper">
+            <div class="row1">
+                <div class="title-produk">
+                    <p class="label-produk">TOP DESTINATION</p>
+                    <h1 class="heading-produk">Explore Top Destination</h1>
+                </div>
+                <div class="toggle-slider">
+                    <i class='bx bxs-chevron-left-circle'></i>
+                    <i class='bx bxs-chevron-right-circle'></i>
+                </div>
+            </div>
+            <div class="row2">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card-produk">
+                            <img src="assets/img/produk.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Beach</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Kuta, Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
+                                        nesciunt
+                                        totam
+                                        vel nihil id est corporis voluptatum sunt.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="assets/img/produk.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Beach</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Kuta, Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
+                                        nesciunt
+                                        totam
+                                        vel nihil id est corporis voluptatum sunt.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="assets/img/produk.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Beach</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Kuta, Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
+                                        nesciunt
+                                        totam
+                                        vel nihil id est corporis voluptatum sunt.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="assets/img/produk.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Beach</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Kuta, Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
+                                        nesciunt
+                                        totam
+                                        vel nihil id est corporis voluptatum sunt.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="assets/img/produk.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Beach</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Kuta, Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
+                                        nesciunt
+                                        totam
+                                        vel nihil id est corporis voluptatum sunt.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="assets/img/produk.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Beach</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Kuta, Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
+                                        nesciunt
+                                        totam
+                                        vel nihil id est corporis voluptatum sunt.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card-produk">
+                            <img src="assets/img/produk.png" alt="">
+                            <div class="detail-produk">
+                                <div class="kategori">
+                                    <p class="label-kategori">Beach</p>
+
+                                    <p class="price">$300</p>
+                                </div>
+                                <div class="title-card">
+                                    <h1>Kuta, Indonesia</h1>
+                                </div>
+                                <div class="review">
+                                    <div class="star">
+                                        <i class='bx bxs-star'></i> 5.0
+                                    </div>
+                                    <p>1.6k reviewer</p>
+                                </div>
+                                <div class="body-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci qui
+                                        nesciunt
+                                        totam
+                                        vel nihil id est corporis voluptatum sunt.</p>
+                                </div>
+                                <div class="btn-produk">
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Produk end -->
+
+    <div class="banner1 container">
+        <div class="content">
+            <h1 class="heading">SPECIAL OFFER</h1>
+            <h3>Family Weeked Package</h3>
+            <p>Off up to 30%</p>
+        </div>
+        <div class="btn-book">
+            <a href="#">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Statistk start -->
+    <section class="statistik">
+        <div class="container statistik-wrapper">
+            <div class="content-img">
+                <img src="assets/img/statistik.png" alt="">
+            </div>
+            <div class="content-statis">
+                <p class="label-statis">OUR PERFORMANCE</p>
+                <h1 class="heading-statis">Most people are satisfied
+                    with our service</h1>
+                <p class="subheading-statis">We always provide the best service to customers,
+                    we will direct you from ordering tickets to the journey</p>
+
+                <div class="angka-wrapper">
+                    <div class="box-angka">
+                        <h1>20</h1>
+                        <p>Years
+                            Experience</p>
+                    </div>
+                    <div class="box-angka">
+                        <h1>300++</h1>
+                        <p>Destination
+                            Collaboration</p>
+                    </div>
+                    <div class="box-angka">
+                        <h1>2k++</h1>
+                        <p>Customers
+                            Happy</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- statistik end -->
+
+    <!-- TESTI START -->
+    <section class="testi" id="testi">
+        <div class="container testi-wrapper">
+            <div class="row-testi">
+                <div class="body-testi">
+                    <h3 class="label-testi">WHAT THEY SAID ?</h3>
+                    <h1 class="heading-testi">What customers say
+                        about their experience with us</h1>
+                    <p class="text-testi">They say what they feel, most of them say they are very satisfied,
+                        especially satisfied because they are always guided and directed
+                        to between destinations so that they are not confused, and
+                        also the provision of comfortable lodging does not have
+                        to pay a lot to get it all</p>
+                </div>
+                <div class="card-testi">
+                    <img src="assets/img/testi.png" alt="">
+                    <div class="isi-testi">
+                        <i class='bx bxs-quote-left'></i>
+                        <p>I am very helpful with this trouravel, because we
+                            can easily get it all without having to prepare
+                            it from afar, and also the price is affordable,
+                            highly recommended.</p>
+                        <i class='bx bxs-quote-right'></i>
+                    </div>
+                    <p class="name-testi">by tinyleopard720</p>
+                    <p class="status-testi">Traveller</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTI END -->
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
