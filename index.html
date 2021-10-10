@@ -9,6 +9,10 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Travel- Slicing</title>
 </head>
 
@@ -34,7 +38,7 @@
 
         <section class="home" id="home">
             <div class="container home-wrapper">
-                <div class="content-left">
+                <div class="content-left" data-aos="fade-right">
                     <h1 class="heading">Make Your Trip Memorable Book With Tour<span>avel</span></h1>
                     <p class="subheading">We have partners with several destinations that you
                         might feel at home there, we will guide you with our best service.</p>
@@ -77,7 +81,7 @@
                     </div>
                     <p class="sugestion">Popular search : Kuta beach, Raja Ampat Beach, Borobudur temple</p>
                 </div>
-                <div class="content-right">
+                <div class="content-right" data-aos="fade-left">
                     <div class="img-wrapper">
                         <img src="assets/img/hero-tavel.png" alt="">
                     </div>
@@ -96,7 +100,7 @@
                 <h1 class="heading-service">Top Values For You</h1>
                 <p class="subheading-service">The best service that will be with you every time</p>
             </div>
-            <div class="row2">
+            <div class="row2" data-aos="fade-up">
                 <div class="box-service">
                     <i class='bx bx-globe'></i>
                     <h3>Lot of Choises</h3>
@@ -148,11 +152,11 @@
     <section class="produk">
         <div class="container produk-wrapper">
             <div class="row1">
-                <div class="title-produk">
+                <div class="title-produk" data-aos="fade-right">
                     <p class="label-produk">TOP DESTINATION</p>
                     <h1 class="heading-produk">Explore Top Destination</h1>
                 </div>
-                <div class="toggle-slider">
+                <div class="toggle-slider" data-aos="fade-left">
                     <i class='bx bxs-chevron-left-circle'></i>
                     <i class='bx bxs-chevron-right-circle'></i>
                 </div>
@@ -378,10 +382,10 @@
     <!-- Statistk start -->
     <section class="statistik">
         <div class="container statistik-wrapper">
-            <div class="content-img">
+            <div class="content-img" data-aos="fade-right">
                 <img src="assets/img/statistik.png" alt="">
             </div>
-            <div class="content-statis">
+            <div class="content-statis" data-aos="fade-left">
                 <p class="label-statis">OUR PERFORMANCE</p>
                 <h1 class="heading-statis">Most people are satisfied
                     with our service</h1>
@@ -413,38 +417,183 @@
     <!-- statistik end -->
 
     <!-- TESTI START -->
-    <section class="testi" id="testi">
+    <section class="testi">
         <div class="container testi-wrapper">
-            <div class="row-testi">
-                <div class="body-testi">
-                    <h3 class="label-testi">WHAT THEY SAID ?</h3>
-                    <h1 class="heading-testi">What customers say
-                        about their experience with us</h1>
-                    <p class="text-testi">They say what they feel, most of them say they are very satisfied,
-                        especially satisfied because they are always guided and directed
-                        to between destinations so that they are not confused, and
-                        also the provision of comfortable lodging does not have
-                        to pay a lot to get it all</p>
-                </div>
-                <div class="card-testi">
-                    <img src="assets/img/testi.png" alt="">
-                    <div class="isi-testi">
-                        <i class='bx bxs-quote-left'></i>
-                        <p>I am very helpful with this trouravel, because we
-                            can easily get it all without having to prepare
-                            it from afar, and also the price is affordable,
-                            highly recommended.</p>
-                        <i class='bx bxs-quote-right'></i>
+            <div class="col-heading" data-aos="fade-right">
+                <p class="label-testi">WHAT THEY SAID ?</p>
+                <h1 class="heading-testi">What customers say
+                    about their experience with us</h1>
+                <p class="subheading-testi">They say what they feel, most of them say they are very satisfied,
+                    especially satisfied because they are always guided and directed
+                    to between destinations so that they are not confused, and
+                    also the provision of comfortable lodging does not have
+                    to pay a lot to get it all</p>
+            </div>
+            <div class="col-slider-testi" data-aos="fade-left">
+                <!-- Swiper -->
+                <div class="swiper mySwiperTesti">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card-testi">
+                            <img src="assets/img/testi.png" alt="">
+                            <div class="text-testi">
+                                <i class='bx bxs-quote-left'></i>
+                                <p>I am very helpful with this trouravel, because we
+                                    can easily get it all without having to prepare
+                                    it from afar, and also the price is affordable,
+                                    highly recommended.</p>
+                                <i class='bx bxs-quote-right'></i>
+                            </div>
+                            <p class="username">by tinyleopard720</p>
+                            <p class="status">Traveller</p>
+                        </div>
+                        <div class="swiper-slide card-testi">
+                            <img src="assets/img/testi.png" alt="">
+                            <div class="text-testi">
+                                <i class='bx bxs-quote-left'></i>
+                                <p>I am very helpful with this trouravel, because we
+                                    can easily get it all without having to prepare
+                                    it from afar, and also the price is affordable,
+                                    highly recommended.</p>
+                                <i class='bx bxs-quote-right'></i>
+                            </div>
+                            <p class="username">by tinyleopard720</p>
+                            <p class="status">Traveller</p>
+                        </div>
+                        <div class="swiper-slide card-testi">
+                            <img src="assets/img/testi.png" alt="">
+                            <div class="text-testi">
+                                <i class='bx bxs-quote-left'></i>
+                                <p>I am very helpful with this trouravel, because we
+                                    can easily get it all without having to prepare
+                                    it from afar, and also the price is affordable,
+                                    highly recommended.</p>
+                                <i class='bx bxs-quote-right'></i>
+                            </div>
+                            <p class="username">by tinyleopard720</p>
+                            <p class="status">Traveller</p>
+                        </div>
+                        <div class="swiper-slide card-testi">
+                            <img src="assets/img/testi.png" alt="">
+                            <div class="text-testi">
+                                <i class='bx bxs-quote-left'></i>
+                                <p>I am very helpful with this trouravel, because we
+                                    can easily get it all without having to prepare
+                                    it from afar, and also the price is affordable,
+                                    highly recommended.</p>
+                                <i class='bx bxs-quote-right'></i>
+                            </div>
+                            <p class="username">by tinyleopard720</p>
+                            <p class="status">Traveller</p>
+                        </div>
+                        <div class="swiper-slide card-testi">
+                            <img src="assets/img/testi.png" alt="">
+                            <div class="text-testi">
+                                <i class='bx bxs-quote-left'></i>
+                                <p>I am very helpful with this trouravel, because we
+                                    can easily get it all without having to prepare
+                                    it from afar, and also the price is affordable,
+                                    highly recommended.</p>
+                                <i class='bx bxs-quote-right'></i>
+                            </div>
+                            <p class="username">by tinyleopard720</p>
+                            <p class="status">Traveller</p>
+                        </div>
+                        <div class="swiper-slide card-testi">
+                            <img src="assets/img/testi.png" alt="">
+                            <div class="text-testi">
+                                <i class='bx bxs-quote-left'></i>
+                                <p>I am very helpful with this trouravel, because we
+                                    can easily get it all without having to prepare
+                                    it from afar, and also the price is affordable,
+                                    highly recommended.</p>
+                                <i class='bx bxs-quote-right'></i>
+                            </div>
+                            <p class="username">by tinyleopard720</p>
+                            <p class="status">Traveller</p>
+                        </div>
                     </div>
-                    <p class="name-testi">by tinyleopard720</p>
-                    <p class="status-testi">Traveller</p>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
     </section>
     <!-- TESTI END -->
 
+    <!-- Banner2 -->
+    <section class="banner2">
+        <div class="container banner2-wrapper">
+            <div class="content-banner2">
+                <h1 class="heading">ARE YOU NEW MEMBER FOR THIS TRIP ? </h1>
+                <p class="subheading">Let's register now and get cashback</p>
 
+                <p class="disc">UP TO 20%</p>
+            </div>
+            <div class="btn-banner2">
+                <a href="#" class="btn-regis">Register</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container footer-wrapper">
+            <div class="col-1-footer">
+                <h1 class="logo-footer">Tour<span>avel.</span></h1>
+                <p class="subheading-footer">The best service to customers is
+                    our top priority in building a business</p>
+                <div class="sosmed-icon">
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                </div>
+                <p class="copy">&copy;Copyright 2021 All Right Reserved | Built by Mardha Mardiya</p>
+            </div>
+            <div class="col-2-footer">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </div>
+            <div class="col-3-footer">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Why Touravel ?</a></li>
+                    <li><a href="#">Partners with us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="col-4-footer">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Accessbility</a></li>
+                </ul>
+            </div>
+            <div class="col-5-footer">
+                <h3>Get in touch</h3>
+                <p>Questions or Feedback</p>
+                <div class="form-input">
+                    <input type="text" placeholder="Type your email">
+                    <a href="#" class="btn-footer">Submit</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000
+        });
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

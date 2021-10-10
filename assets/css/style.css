@@ -500,17 +500,177 @@ section{
 }
 /* banner 1 end */
 
-/* testi start */
+/* TESTI START */
 .testi-wrapper{
     margin: auto;
-}
-.testi-wrapper .row-testi{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.row-testi .body-testi{
+.testi-wrapper .col-heading, .col-slider-testi{
     width: 700px;
 }
-/* testi end */
+.testi-wrapper .col-heading .label-testi{
+    font-size: 25px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--second-color);
+}
+.testi-wrapper .col-heading .heading-testi{
+    font-size: 36px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: #4a4a4a;
+    margin: 25px 0;
+}
+.col-slider-testi .card-testi{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.103);
+    padding: 30px;
+    text-align: center;
+}
+.card-testi .text-testi{
+    padding: 20px;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+.testi .bxs-quote-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.testi .bxs-quote-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.card-testi .status{
+    margin-top: 5px;
+    color: var(--second-color);
+}
+/* TESTI END */
+
+/* BANNER2 */
+.banner2-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second-color);
+    padding: 5rem 10rem;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+.content-banner2 .heading{
+    font-size: 36px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+.content-banner2 .subheading{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    margin-top: 10px;
+}
+.content-banner2 .disc{
+    background-color: #c7772d;
+    color: #fff;
+    font-family: var(--heading-font);
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 40px;
+}
+.btn-banner2 .btn-regis{
+    background-color: var(--main-color);
+    color: #fff;
+    font-family: var(--heading-font);
+    font-size: 24px;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+
+/* Footer */
+.footer{
+    margin-top: 200px;
+}
+.footer-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1-footer .logo-footer{
+    font-family: var(--heading-font);
+    font-size: 50px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.logo-footer span{
+    font-size: 25px;
+    color: var(--second-color);
+}
+.col-1-footer .subheading-footer{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 400px;
+}
+.sosmed-icon i{
+    font-size: 3rem;
+    color: var(--main-color);
+    margin: 20px 5px;
+}
+.col-1-footer .copy{
+    margin-top: 50px;
+}
+.col-2-footer h3, .col-3-footer h3, .col-4-footer h3, .col-5-footer h3{
+    font-size: 30px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+.col-2-footer ul, .col-3-footer ul, .col-4-footer ul{
+    margin-top: 20px;
+}
+.col-2-footer ul li, .col-3-footer ul li, .col-4-footer ul li{
+    margin-top: 10px;
+}
+.col-2-footer li a , .col-3-footer li a, .col-4-footer li a{
+    font-size: 18px;
+ color: #4a4a4a;
+}
+.col-5-footer p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.form-input{
+    padding: 20px 30px;
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
+}
+.form-input input{
+    border: none;
+}
+.form-input input:focus{
+    outline: none;
+}
+.form-input .btn-footer{
+    background-color: var(--second-color);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+/*  */
 
 @media screen and (max-width: 991px) {
     .navbar .nav-wrapper{
@@ -622,6 +782,38 @@ section{
     .content-statis .angka-wrapper{
         margin: auto;
     }
+    .testi-wrapper .col-heading{
+        text-align: center;
+        margin: auto;
+    }
+    .testi-wrapper .col-slider-testi{
+        text-align: center;
+        margin: 40px auto;
+    }
+    .banner2-wrapper{
+        padding: 4rem 10rem;
+    }
+    .btn-banner2{
+        margin-top: 100px;
+    }
+    .btn-banner2 .btn-regis{
+        background-color: var(--main-color);
+        color: #fff;
+        font-family: var(--heading-font);
+        font-size: 24px;
+        padding: 20px 40px;
+        border-radius: 50px;
+    }
+    .footer{
+        padding: 10px 20px;
+    }
+    .footer .footer-wrapper{
+        justify-content: start;
+        gap: 10px;
+    }
+    .footer-wrapper .col-4-footer .col-5-footer{
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -629,4 +821,18 @@ section{
     .banner1 .btn-book{
        margin: 30px auto;
     }
+   .testi-wrapper .col-slider-testi{
+       margin: 30px auto;
+       width: 400px;
+   }
+   .banner2-wrapper{
+    padding: 4rem 2rem;
+}
+.btn-banner2{
+    margin-top: 50px;
+}
+.footer .footer-wrapper{
+    justify-content: start;
+    gap: 30px;
+}
 }
